@@ -17,14 +17,14 @@ import dayjs from 'dayjs';
 
 const statusMap = {
   pending: { label: 'Pending', color: 'warning' },
-  delivered: { label: 'Delivered', color: 'success' },
-  refunded: { label: 'Refunded', color: 'error' },
+  completed: { label: 'Completed', color: 'success' },
+  attention: { label: 'Attention', color: 'error' },
 } as const;
 
 export interface Order {
   id: string;
   customer: { name: string };
-  status: 'pending' | 'delivered' | 'refunded';
+  status: 'completed' | 'pending' | 'attention';
   createdAt: Date;
 }
 

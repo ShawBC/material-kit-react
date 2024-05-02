@@ -77,40 +77,40 @@ export default function Page(): React.JSX.Element {
         <LatestOrders
           orders={[
             {
-              id: 'ORD-007',
-              customer: { name: 'Ekaterina Tankova' },
-              status: 'pending',
+              id: 'Transfer',
+              customer: { name: 'Zenith Pathways' },
+              status: 'attention',
               createdAt: dayjs().subtract(10, 'minutes').toDate(),
             },
             {
-              id: 'ORD-006',
-              customer: { name: 'Cao Yu' },
-              status: 'delivered',
-              createdAt: dayjs().subtract(10, 'minutes').toDate(),
-            },
-            {
-              id: 'ORD-004',
-              customer: { name: 'Alexa Richardson' },
-              status: 'refunded',
-              createdAt: dayjs().subtract(10, 'minutes').toDate(),
-            },
-            {
-              id: 'ORD-003',
-              customer: { name: 'Anje Keizer' },
-              status: 'pending',
-              createdAt: dayjs().subtract(10, 'minutes').toDate(),
-            },
-            {
-              id: 'ORD-002',
-              customer: { name: 'Clarke Gillebert' },
-              status: 'delivered',
-              createdAt: dayjs().subtract(10, 'minutes').toDate(),
+              id: 'Creation',
+              customer: { name: 'Echo Frontier' },
+              status: 'completed',
+              createdAt: dayjs().subtract(10000, 'minutes').toDate(),
             },
             {
               id: 'Transfer',
-              customer: { name: '' },
-              status: 'delivered',
-              createdAt: dayjs().subtract(10, 'minutes').toDate(),
+              customer: { name: 'Vortex Innovations' },
+              status: 'completed',
+              createdAt: dayjs().subtract(20000, 'minutes').toDate(),
+            },
+            {
+              id: 'Transfer',
+              customer: { name: 'Quantum Ventures' },
+              status: 'pending',
+              createdAt: dayjs().subtract(30000, 'minutes').toDate(),
+            },
+            {
+              id: 'Transfer',
+              customer: { name: 'Nebula Dynamics' },
+              status: 'completed',
+              createdAt: dayjs().subtract(35000, 'minutes').toDate(),
+            },
+            {
+              id: 'Transfer',
+              customer: { name: 'Aurora Insight' },
+              status: 'completed',
+              createdAt: dayjs().subtract(15000, 'minutes').toDate(),
             },
           ]}
           sx={{ height: '100%' }}
