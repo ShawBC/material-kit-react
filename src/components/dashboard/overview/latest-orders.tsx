@@ -24,7 +24,6 @@ const statusMap = {
 export interface Order {
   id: string;
   customer: { name: string };
-  amount: number;
   status: 'pending' | 'delivered' | 'refunded';
   createdAt: Date;
 }
@@ -37,14 +36,14 @@ export interface LatestOrdersProps {
 export function LatestOrders({ orders = [], sx }: LatestOrdersProps): React.JSX.Element {
   return (
     <Card sx={sx}>
-      <CardHeader title="Latest orders" />
+      <CardHeader title="Latest Passport Changes" />
       <Divider />
       <Box sx={{ overflowX: 'auto' }}>
         <Table sx={{ minWidth: 800 }}>
           <TableHead>
             <TableRow>
-              <TableCell>Order</TableCell>
-              <TableCell>Customer</TableCell>
+              <TableCell>State</TableCell>
+              <TableCell>Party</TableCell>
               <TableCell sortDirection="desc">Date</TableCell>
               <TableCell>Status</TableCell>
             </TableRow>
