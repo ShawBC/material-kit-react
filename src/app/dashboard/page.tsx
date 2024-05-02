@@ -52,13 +52,13 @@ export default function Page(): React.JSX.Element {
               updatedAt: dayjs().subtract(18, 'minutes').subtract(5, 'hour').toDate(),
             },
             {
-              id: 'Ammomium Phosphate',
-              name: 'Necessaire Body Lotion',
+              id: 'DPP-004',
+              name: 'Steel Beam',
               image: '/assets/product-4.png',
               updatedAt: dayjs().subtract(41, 'minutes').subtract(3, 'hour').toDate(),
             },
             {
-              id: 'Steel Beam',
+              id: 'DPP-003',
               name: 'Red Flare',
               image: '/assets/product-3.png',
               updatedAt: dayjs().subtract(5, 'minutes').subtract(3, 'hour').toDate(),
@@ -95,13 +95,13 @@ export default function Page(): React.JSX.Element {
               createdAt: dayjs().subtract(20000, 'minutes').toDate(),
             },
             {
-              id: 'Transfer',
+              id: 'Updating',
               customer: { name: 'Quantum Ventures' },
               status: 'pending',
               createdAt: dayjs().subtract(30000, 'minutes').toDate(),
             },
             {
-              id: 'Transfer',
+              id: 'Deletion',
               customer: { name: 'Nebula Dynamics' },
               status: 'completed',
               createdAt: dayjs().subtract(35000, 'minutes').toDate(),
